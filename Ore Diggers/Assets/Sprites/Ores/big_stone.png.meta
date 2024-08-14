@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b280a0e7e28d3444883f92be9610396f
+guid: 4b6aefb7dd17d334ebfbcd4e1bbf4e8d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -755177167151584831
-    second: "k\xFC\xE7\xFCkta\u015F_0"
+      213: -253748313777088944
+    second: kaya_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "k\xFC\xE7\xFCkta\u015F_0"
+      name: kaya_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 20
-        width: 67
-        height: 29
+        x: 16
+        y: 13
+        width: 75
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c9a1791e521585f0800000000000000
-      internalID: -755177167151584831
+      spriteID: 05656f6c0418a7cf0800000000000000
+      internalID: -253748313777088944
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "k\xFC\xE7\xFCkta\u015F_0": -755177167151584831
+      kaya_0: -253748313777088944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
