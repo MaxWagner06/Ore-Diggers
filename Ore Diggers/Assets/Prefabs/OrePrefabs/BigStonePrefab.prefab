@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 280722866165377840}
   m_Layer: 0
   m_Name: BigStonePrefab
-  m_TagString: Untagged
+  m_TagString: Ore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

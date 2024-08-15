@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6743851872849994515}
   m_Layer: 0
   m_Name: "Ir\u0131dumPrefab"
-  m_TagString: Untagged
+  m_TagString: Ore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
