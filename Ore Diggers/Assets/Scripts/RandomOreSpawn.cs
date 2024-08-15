@@ -4,52 +4,24 @@ using UnityEngine;
 
 public class RandomOreSpawn : MonoBehaviour
 {
+    public List<Vector2> orePosList = new List<Vector2>();
+
     public GameObject smallStoneOre, bigStoneOre, coalOre, copperOre, ironOre, silverOre, goldOre,
                       platinumOre, iridiumOre, uraniumOre,ghostOre;
     public int smallStoneOreCount, bigStoneOreCount, coalOreCount, copperOreCount, ironOreCount, silverOreCount,
-               goldOreCount, platinumOreCount, iridiumOreount, uraniumOreCount;
+               goldOreCount, platinumOreCount, iridiumOreCount, uraniumOreCount;
 
     public int mapSize;
-    private int randomX, randomY;
-    private int rayPositionZ = -10;
-    public Vector2 tempCoord;
-    public Vector3 rayCoord;
+    private int randomX, randomY, randomXMultiple, randomYMultiple;
+    public Vector2 randomCoord;
 
     private void Start()
     {
         StartOreSpawn();
     }
 
-
     public void StartOreSpawn()
-    {
-        randomX = Random.Range(-mapSize, mapSize);
-        randomY = Random.Range(-mapSize, mapSize);
-        tempCoord = new Vector2(randomX, randomY);
-
-        for (int i = 0; i < smallStoneOreCount; i++)
-        {
-            rayCoord = new Vector3(randomX, rayPositionZ, randomY);
-            RaycastHit hit;
-            if (Physics.Raycast(rayCoord, Vector3.forward, out hit, Mathf.Infinity))
-            {
-                if (!hit.collider)
-                {
-                    Instantiate(smallStoneOre, tempCoord, Quaternion.identity);
-                }
-                else
-                {
-                    smallStoneOreCount++;
-                }
-            }
-
-        }
+    {  
     }
 
 }
-
-
-
-
-
-
