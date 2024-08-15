@@ -542,7 +542,7 @@ MonoBehaviour:
   iridiumOre: {fileID: 1060135432627092805, guid: ea362fb804817dd41ac84f2a3a4facc5, type: 3}
   uraniumOre: {fileID: 8651406649230804907, guid: f8a03ec84bafe4d4c9c819916b44a1f5, type: 3}
   ghostOre: {fileID: 6752571079623428232, guid: 0f06528d2ff606c40a4fbd7f9ff3310c, type: 3}
-  smallStoneOreCount: 10
+  smallStoneOreCount: 50
   bigStoneOreCount: 0
   coalOreCount: 0
   copperOreCount: 0
@@ -550,11 +550,9 @@ MonoBehaviour:
   silverOreCount: 0
   goldOreCount: 0
   platinumOreCount: 0
-  iridiumOreount: 0
+  iridiumOreCount: 0
   uraniumOreCount: 0
-  mapSize: 50
-  tempCoord: {x: 0, y: 0}
-  rayCoord: {x: 0, y: 0, z: 0}
+  mapSize: 20
 --- !u!4 &1845771882
 Transform:
   m_ObjectHideFlags: 0
