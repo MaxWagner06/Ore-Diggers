@@ -452,10 +452,11 @@ MonoBehaviour:
   silverOreCount: 0
   goldOreCount: 0
   platinumOreCount: 0
-  iridiumOreount: 0
+  iridiumOreCount: 0
   uraniumOreCount: 0
-  mapSize: 50
-  tempCoord: {x: 0, y: 0, z: 0}
+  mapSize: 20
+  tempCoord: {x: 0, y: 0}
+  tempCoordGhost: {x: 0, y: 0}
 --- !u!4 &1845771882
 Transform:
   m_ObjectHideFlags: 0
