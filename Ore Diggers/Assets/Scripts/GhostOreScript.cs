@@ -5,15 +5,12 @@ using UnityEngine;
 public class GhostOreScript : MonoBehaviour
 {
     public bool canSpawnOre;
-    private void OnTriggerEnter2D(Collider2D collision)
+    public string selam = "YOKYOKyoK";
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Ore"||collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Ore")
         {
-            canSpawnOre = false;
-        }
-        if(collision.gameObject == null)
-        {
-            canSpawnOre = true;
+            selam = "Maden Var amk";
         }
     }
 }

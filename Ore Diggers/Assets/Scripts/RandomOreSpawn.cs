@@ -11,7 +11,9 @@ public class RandomOreSpawn : MonoBehaviour
 
     public int mapSize;
     private int randomX, randomY;
-    public Vector3 tempCoord;
+    private int rayPositionZ = -10;
+    public Vector2 tempCoord;
+    public Vector3 rayCoord;
 
     private void Start()
     {
@@ -21,29 +23,33 @@ public class RandomOreSpawn : MonoBehaviour
 
     public void StartOreSpawn()
     {
-        //for (int i = 0; i < smallStoneOreCount; i++)
-        //{
-            randomX = Random.Range(-mapSize, mapSize);
-            randomY = Random.Range(-mapSize, mapSize);
-            tempCoord = new Vector3(randomX, 0, randomY);
+        randomX = Random.Range(-mapSize, mapSize);
+        randomY = Random.Range(-mapSize, mapSize);
+        tempCoord = new Vector2(randomX, randomY);
 
-            GhostOreScript tempOre = Instantiate(ghostOre, tempCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+        for (int i = 0; i < smallStoneOreCount; i++)
+        {
+            rayCoord = new Vector3(randomX, rayPositionZ, randomY);
+            RaycastHit hit;
+            if (Physics.Raycast(rayCoord, Vector3.forward, out hit, Mathf.Infinity))
+            {
+                if (!hit.collider)
+                {
+                    Instantiate(smallStoneOre, tempCoord, Quaternion.identity);
+                }
+                else
+                {
+                    smallStoneOreCount++;
+                }
+            }
 
-            if (tempOre.canSpawnOre)
-            {
-                Destroy(tempOre.gameObject);
-                Instantiate(smallStoneOre, tempCoord, Quaternion.identity);
-            }
-            else
-            {
-                Destroy(tempOre.gameObject);
-                //smallStoneOreCount++;
-            }
-        //}
+        }
     }
 
-
-
-
-
 }
+
+
+
+
+
+
