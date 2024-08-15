@@ -27,8 +27,6 @@ public class RandomOreSpawn : MonoBehaviour
         randomY = Random.Range(-mapSize, mapSize);
         tempCoord = new Vector2(randomX, randomY);
 
-        GhostOreScript tempOre = Instantiate(ghostOre, tempCoord, Quaternion.identity).GetComponent<GhostOreScript>();
-
         for (int i = 0; i < smallStoneOreCount; i++)
         {
             rayCoord = new Vector3(randomX, rayPositionZ, randomY);
@@ -38,6 +36,10 @@ public class RandomOreSpawn : MonoBehaviour
                 if (!hit.collider)
                 {
                     Instantiate(smallStoneOre, tempCoord, Quaternion.identity);
+                }
+                else
+                {
+                    smallStoneOreCount++;
                 }
             }
 
