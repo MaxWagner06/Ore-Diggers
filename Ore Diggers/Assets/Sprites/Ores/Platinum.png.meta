@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 23f1d8b02e65f75418760efd6500398e
+guid: 5a93193bd7bcd814abe6511953a23ad2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8799784155770591797
-    second: "alt\u0131n_0"
+      213: -6533277150573172202
+    second: Platinum_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "alt\u0131n_0"
+      name: Platinum_0
       rect:
         serializedVersion: 2
         x: 16
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53a11d0011d1f1a70800000000000000
-      internalID: 8799784155770591797
+      spriteID: 61ae8ecdb032555a0800000000000000
+      internalID: -6533277150573172202
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "alt\u0131n_0": 8799784155770591797
+      Platinum_0: -6533277150573172202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
