@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Iridium
-  oreIndex: 8
   oreDurability: 10000
   oreRequiredPickaxeIndex: 4
   oreDropCount: 1

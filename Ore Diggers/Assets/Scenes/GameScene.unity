@@ -418,7 +418,6 @@ GameObject:
   - component: {fileID: 1367880997}
   - component: {fileID: 1367880996}
   - component: {fileID: 1367880995}
-  - component: {fileID: 1367881001}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -608,28 +607,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1367881001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367880994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4748fff748356a04f9e30810aa2f81fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentPickaxeIndex: 0
-  currentDamage: 0
-  handDamage: 1
-  stonePickaxeDamage: 10
-  ironPickaxeDamage: 50
-  goldPickaxeDamage: 200
-  iridiumPickaxeDamage: 1000
-  MATKAPdamage: 2000
-  notificationTextObject: {fileID: 0}
-  notificationPanel: {fileID: 0}
 --- !u!1 &1845771880
 GameObject:
   m_ObjectHideFlags: 0

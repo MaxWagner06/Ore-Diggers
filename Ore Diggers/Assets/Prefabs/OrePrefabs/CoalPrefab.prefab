@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Coal
-  oreIndex: 2
   oreDurability: 100
   oreRequiredPickaxeIndex: 1
   oreDropCount: 5

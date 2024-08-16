@@ -101,8 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Copper
-  oreIndex: 3
-  oreDurability: 250
+  oreDurability: 200
   oreRequiredPickaxeIndex: 2
   oreDropCount: 5
 --- !u!61 &3479209539887656563

@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Silver
-  oreIndex: 5
   oreDurability: 1000
   oreRequiredPickaxeIndex: 3
   oreDropCount: 5

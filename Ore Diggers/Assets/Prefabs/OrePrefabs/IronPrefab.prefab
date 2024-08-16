@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Iron
-  oreIndex: 4
   oreDurability: 500
   oreRequiredPickaxeIndex: 2
   oreDropCount: 5

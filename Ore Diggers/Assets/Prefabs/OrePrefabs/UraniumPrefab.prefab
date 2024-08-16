@@ -101,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Uranium
-  oreIndex: 9
   oreDurability: 50000
   oreRequiredPickaxeIndex: 5
   oreDropCount: 777
