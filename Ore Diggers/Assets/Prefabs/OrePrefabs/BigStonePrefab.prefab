@@ -146,7 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558af01938508d54789f801cc73bd2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oreName: BigStone
+  oreName: Rock
+  oreIndex: 1
   oreDurability: 50
   oreRequiredPickaxeIndex: 1
   oreDropCount: 5
