@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oreName: Gold
+  oreIndex: 6
   oreDurability: 2000
   oreRequiredPickaxeIndex: 3
   oreDropCount: 5
