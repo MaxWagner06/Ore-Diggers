@@ -2554,6 +2554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1085160460}
   - component: {fileID: 1085160459}
+  - component: {fileID: 1085160461}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2592,6 +2593,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085160461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085160458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9285e2ff4e9194783d27140e1117af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SmallStoneCountInv: 0
+  BigStoneCountInv: 0
+  CoalCountInv: 0
+  CopperCountInv: 0
+  IronCountInv: 0
+  SilverCountInv: 0
+  GoldCountInv: 0
+  PlatinumCountInv: 0
+  IridiumCountInv: 0
+  UraniumCountInv: 0
+  SmallStoneCountInvText: {fileID: 2112067176}
+  BigStoneCountInvText: {fileID: 1289504924}
+  CoalCountInvText: {fileID: 497840387}
+  CopperCountInvText: {fileID: 1607320301}
+  IronCountInvText: {fileID: 2010224285}
+  SilverCountInvText: {fileID: 13479938}
+  GoldCountInvText: {fileID: 1349242019}
+  PlatinumCountInvText: {fileID: 343441438}
+  IridiumCountInvText: {fileID: 1953852058}
 --- !u!1 &1087090414
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,6 +3650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4748fff748356a04f9e30810aa2f81fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryScripts: {fileID: 1085160461}
   currentPickaxeIndex: 5
   currentDamage: 0
   handDamage: 1

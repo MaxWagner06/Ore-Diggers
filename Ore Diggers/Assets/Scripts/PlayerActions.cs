@@ -7,6 +7,7 @@ using TMPro;
 
 public class PlayerActions : MonoBehaviour
 {
+    public Inventory inventoryScripts;
     public int currentPickaxeIndex;
     [HideInInspector] public int currentDamage;
     public int handDamage, stonePickaxeDamage, ironPickaxeDamage, goldPickaxeDamage, iridiumPickaxeDamage, MATKAPDamage;
@@ -57,7 +58,7 @@ public class PlayerActions : MonoBehaviour
 
                         if(oreScript.oreDurability <= 0)
                         {
-                            //Inventory.AddOre(oreScript.oreIndex, oreScript.oreDropCount);
+                            inventoryScripts.AddOre(oreScript.oreIndex, oreScript.oreDropCount);
                             Destroy(hit.collider.gameObject);
 
                             TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
