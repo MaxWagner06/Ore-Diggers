@@ -5,15 +5,12 @@ using System.Threading;
 
 public class Ch_movement : MonoBehaviour
 {
+    public Animator animator;
     public Rigidbody2D rb;
     public float speed;
     public float Ch_mov,mov_ver;
     public bool ch_facingR = true;
-    public Sprite idle;
-    public Sprite[] sprites;
     Vector2 movement;
-    public SpriteRenderer spriteRenderer;
-    private int frame;
 
     
     public void Update(){
@@ -21,38 +18,39 @@ public class Ch_movement : MonoBehaviour
         mov_ver = Input.GetAxis("Vertical");
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
-        if(Ch_mov != 0){
-            Animate();
+
+
+        if(Ch_mov != 0)
+        {
+            //Walk
+            animator.SetBool("onWalk", true);
         }
-        else if(mov_ver != 0){
-            Animate();
+        else if(mov_ver != 0)
+        {
+            //Walk
+            animator.SetBool("onWalk", true);
         }
-        else if(Ch_mov == 0 && mov_ver == 0){
-            spriteRenderer.sprite = idle;
+        else if(Ch_mov == 0 && mov_ver == 0)
+        {
+            //idle
+            animator.SetBool("onWalk", false);
         }
-        if(Ch_mov > 0 && ch_facingR == false){
+        if(Ch_mov > 0 && ch_facingR == false)
+        {
             Turn();
         }
-        else if(Ch_mov < 0 && ch_facingR == true){
+        else if(Ch_mov < 0 && ch_facingR == true)
+        {
             Turn();
         }
     }
-    private void FixedUpdate(){
+    private void FixedUpdate()
+    {
         rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
     }   
-    public void Turn(){
+    public void Turn()
+    {
         ch_facingR = !ch_facingR;
         transform.localScale = new Vector2(-transform.localScale.x,transform.localScale.y);
-    }
-    private void Animate(){
-        frame = frame + 1;
-        if(frame >= sprites.Length){
-            frame = 0;
-        }
-        
-        if(frame >= 0 && frame <= sprites.Length){
-            spriteRenderer.sprite = sprites[frame];
-        }
-        Thread.Sleep(70);
     }
 }
