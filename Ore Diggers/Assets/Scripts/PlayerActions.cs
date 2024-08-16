@@ -9,7 +9,7 @@ public class PlayerActions : MonoBehaviour
 {
     public int currentPickaxeIndex;
     [HideInInspector] public int currentDamage;
-    public int handDamage, stonePickaxeDamage, ironPickaxeDamage, goldPickaxeDamage, iridiumPickaxeDamage, MATKAPdamage;
+    public int handDamage, stonePickaxeDamage, ironPickaxeDamage, goldPickaxeDamage, iridiumPickaxeDamage, MATKAPDamage;
 
     public GameObject notificationTextObject;
     public GameObject notificationPanel;
@@ -38,7 +38,7 @@ public class PlayerActions : MonoBehaviour
         }
         else if (currentPickaxeIndex == 5)
         {
-            currentDamage = MATKAPdamage;
+            currentDamage = MATKAPDamage;
         }
 
 
@@ -61,6 +61,7 @@ public class PlayerActions : MonoBehaviour
                             Destroy(hit.collider.gameObject);
 
                             TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
+                            notificationText.gameObject.transform.SetParent(notificationPanel.transform);
                             notificationText.text = "+ " + oreScript.oreDropCount + " " + oreScript.oreName;
                         }
                     }
