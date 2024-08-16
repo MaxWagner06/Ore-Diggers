@@ -9,9 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2463290692159108380}
-  - component: {fileID: 3382295768684829386}
   - component: {fileID: -7697551263829470709}
-  - component: {fileID: -5149504726208498006}
   m_Layer: 0
   m_Name: GhostOre
   m_TagString: Untagged
@@ -34,52 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &3382295768684829386
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6752571079623428232}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.2278986, y: 0.20390928}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.5, y: 1.5}
-  m_EdgeRadius: 0
 --- !u!114 &-7697551263829470709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,32 +44,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa118fb68e564f34caf804934e24b44d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSpawn: 1
-  rb: {fileID: 0}
---- !u!50 &-5149504726208498006
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6752571079623428232}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  smallStone: {fileID: 5778837825002688144, guid: 9bb6d0e22e4618b4193ccaa001793b7e, type: 3}
+  bigStone: {fileID: 8141072976884947124, guid: 41387057681a08a4580d8f4efbe0eb49, type: 3}
+  coal: {fileID: 3497864872618819970, guid: a14398cc7610b5e469fa173aa471b582, type: 3}
+  copper: {fileID: 3116860635115448840, guid: 99d81f06667b66442be4cdad452194fd, type: 3}
+  iron: {fileID: 1479589476371259936, guid: d8efb83f3cea75542b0fbe46a9e895a3, type: 3}
+  silver: {fileID: 4625913802992944788, guid: 6d36ac0a2b4ed91459d0f5f9df3d7c69, type: 3}
+  gold: {fileID: 3462634518812127555, guid: e070f1827f6ce6e4c90ea2d804f2830b, type: 3}
+  platinum: {fileID: 8351354151364667962, guid: 3a9358532e1120a4b8787394d04fd6b5, type: 3}
+  iridium: {fileID: 1060135432627092805, guid: ea362fb804817dd41ac84f2a3a4facc5, type: 3}
+  uranium: {fileID: 8651406649230804907, guid: f8a03ec84bafe4d4c9c819916b44a1f5, type: 3}
+  currentOreIndex: 0
+  currentOreObject: {fileID: 0}
+  Ghost: {fileID: 6752571079623428232}
+  canSpawn: 0
+  mapsize: 0
+  oreBetween: 0

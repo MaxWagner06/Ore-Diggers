@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.2296, y: -0.551, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -311,7 +311,7 @@ Transform:
   m_GameObject: {fileID: 798401154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.2296, y: -0.551, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -380,7 +380,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -8865707408713769797, guid: 0d9e7b4f2fae5f242854184bd4225d18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -401,8 +401,8 @@ Transform:
   m_GameObject: {fileID: 1493502926}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.2296, y: -0.551, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -490,7 +490,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0021973252, y: 0.0013791919}
+  m_Offset: {x: -0.0021973252, y: -0.7179362}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -500,7 +500,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2477034, y: 3.240551}
+  m_Size: {x: 1.2477034, y: 1.80192}
   m_EdgeRadius: 0
 --- !u!1 &1845771880
 GameObject:
@@ -543,16 +543,17 @@ MonoBehaviour:
   uraniumOre: {fileID: 8651406649230804907, guid: f8a03ec84bafe4d4c9c819916b44a1f5, type: 3}
   ghostOre: {fileID: 6752571079623428232, guid: 0f06528d2ff606c40a4fbd7f9ff3310c, type: 3}
   smallStoneOreCount: 50
-  bigStoneOreCount: 0
-  coalOreCount: 0
-  copperOreCount: 0
-  ironOreCount: 0
-  silverOreCount: 0
-  goldOreCount: 0
-  platinumOreCount: 0
-  iridiumOreCount: 0
-  uraniumOreCount: 0
-  mapSize: 20
+  bigStoneOreCount: 50
+  coalOreCount: 50
+  copperOreCount: 50
+  ironOreCount: 50
+  silverOreCount: 50
+  goldOreCount: 50
+  platinumOreCount: 50
+  iridiumOreCount: 50
+  uraniumOreCount: 5
+  mapSize: 50
+  spaceOresBetween: 3
 --- !u!4 &1845771882
 Transform:
   m_ObjectHideFlags: 0

@@ -9,11 +9,10 @@ public class RandomOreSpawn : MonoBehaviour
     public int smallStoneOreCount, bigStoneOreCount, coalOreCount, copperOreCount, ironOreCount, silverOreCount,
                goldOreCount, platinumOreCount, iridiumOreCount, uraniumOreCount;
 
-    public int mapSize;
-    private int randomX, randomY;
-    private Vector2 randomCoord, ghostSpawnCoord;
+    public int mapSize,spaceOresBetween;
+    private int randomX, randomY,multipleX,multipleY;
+    private Vector2 randomCoord, ghostCoord;
 
-    GhostOreScript ghostOreObject;
 
 
 
@@ -27,21 +26,143 @@ public class RandomOreSpawn : MonoBehaviour
 
         for (int i = 0; i < smallStoneOreCount; i++)
         {
-            randomX = Random.Range(-mapSize, mapSize);
-            randomY = Random.Range(-mapSize, mapSize);
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
             randomCoord = new Vector2(randomX, randomY);
-            ghostSpawnCoord = new Vector2(randomX + 4.5f, randomY);
-            ghostOreObject = Instantiate(ghostOre, ghostSpawnCoord, Quaternion.identity).GetComponent<GhostOreScript>();
-            if (ghostOreObject.canSpawn)
-            {
-                Destroy(ghostOreObject.gameObject);
-                Instantiate(smallStoneOre, randomCoord, Quaternion.identity);
-            }
-
-
+            
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 0;
         }
 
+        for (int i = 0; i < bigStoneOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
 
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 1;
+        }
+
+        for (int i = 0; i < coalOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 2;
+        }
+
+        for (int i = 0; i < copperOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 3;
+        }
+
+        for (int i = 0; i < ironOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 4;
+        }
+
+        for (int i = 0; i < silverOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 5;
+        }
+
+        for (int i = 0; i < goldOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 6;
+        }
+
+        for (int i = 0; i < platinumOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 7;
+        }
+
+        for (int i = 0; i < iridiumOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 8;
+        }
+
+        for (int i = 0; i < uraniumOreCount; i++)
+        {
+            multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+            randomX = multipleX * spaceOresBetween;
+            randomY = multipleY * spaceOresBetween;
+            randomCoord = new Vector2(randomX, randomY);
+
+            GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+            ghostOreObject.mapsize = mapSize;
+            ghostOreObject.oreBetween = spaceOresBetween;
+            ghostOreObject.currentOreIndex = 9;
+        }
     }
 
 }
