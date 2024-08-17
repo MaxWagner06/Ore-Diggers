@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558af01938508d54789f801cc73bd2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oreName: Uranium
+  oreName: ???
   oreIndex: 9
   oreDurability: 50000
   oreRequiredPickaxeIndex: 5

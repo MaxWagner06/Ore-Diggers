@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditorInternal;
 
 public class Inventory : MonoBehaviour
 {
+
     public int SmallStoneCountInv,BigStoneCountInv,CoalCountInv,CopperCountInv,IronCountInv,SilverCountInv,GoldCountInv,PlatinumCountInv,IridiumCountInv,UraniumCountInv;
     public TextMeshProUGUI SmallStoneCountInvText,BigStoneCountInvText,CoalCountInvText,CopperCountInvText,IronCountInvText,SilverCountInvText,GoldCountInvText,PlatinumCountInvText,IridiumCountInvText;
-    
+
     public void Update(){
         SmallStoneCountInvText.text = SmallStoneCountInv.ToString();
         BigStoneCountInvText.text = BigStoneCountInv.ToString();
