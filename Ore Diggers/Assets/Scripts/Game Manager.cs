@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject InventoryPanel;
     public GameObject PauseMenu;
+    public GameObject TraderPanel;
     public bool Inventory_Open = false;
     public bool PauseMenu_Open = false;
 
@@ -59,5 +60,11 @@ public class GameManager : MonoBehaviour
     public void MainMenuButton()
     {
         SceneManager.LoadScene(0);
+    }
+    public void TraderOpenButton(){
+        TraderPanel.SetActive(true);
+    }
+    public void TraderCloseButton(){
+        TraderPanel.SetActive(false);
     }
 }
