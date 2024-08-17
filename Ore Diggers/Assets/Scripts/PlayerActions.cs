@@ -59,11 +59,11 @@ public class PlayerActions : MonoBehaviour
                         if(oreScript.oreDurability <= 0)
                         {
                             inventoryScripts.AddOre(oreScript.oreIndex, oreScript.oreDropCount);
-                            Destroy(hit.collider.gameObject);
 
                             TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
                             notificationText.gameObject.transform.SetParent(notificationPanel.transform);
                             notificationText.text = "+ " + oreScript.oreDropCount + " " + oreScript.oreName;
+                            Destroy(hit.collider.gameObject);
                         }
                     }
                 }
