@@ -1217,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41, y: -199}
+  m_AnchoredPosition: {x: 55, y: -199}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178748183
@@ -1608,11 +1608,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 213140579}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085160461}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: IridiumPickaxeBuyButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &213140579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,7 +1969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 82, y: -198}
+  m_AnchoredPosition: {x: 100, y: -198}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246162553
@@ -2365,7 +2377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: -185}
+  m_AnchoredPosition: {x: -107, y: -185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272807687
@@ -2854,11 +2866,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 325338004}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085160461}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: IronPickaxeBuyButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &325338004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,7 +3710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72, y: -185}
+  m_AnchoredPosition: {x: -58, y: -185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479386881
@@ -3805,11 +3829,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 485335549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085160461}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: GoldPickaxeBuyButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &485335549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4398,7 +4434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: -199}
+  m_AnchoredPosition: {x: -41, y: -199}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554441165
@@ -5250,7 +5286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -156, y: -184}
+  m_AnchoredPosition: {x: -152, y: -184}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &728976435
@@ -5641,11 +5677,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 766164168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085160461}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: MatkapBuyButtonF
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &766164168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6472,7 +6520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245, y: -183}
+  m_AnchoredPosition: {x: -240, y: -183}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996119090
@@ -6736,9 +6784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9285e2ff4e9194783d27140e1117af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SmallStoneCountInv: 0
-  BigStoneCountInv: 0
-  CoalCountInv: 0
+  SmallStoneCountInv: 110
+  BigStoneCountInv: 99
+  CoalCountInv: 99
   CopperCountInv: 0
   IronCountInv: 0
   SilverCountInv: 0
@@ -6755,27 +6803,27 @@ MonoBehaviour:
   GoldCountInvText: {fileID: 1349242019}
   PlatinumCountInvText: {fileID: 343441438}
   IridiumCountInvText: {fileID: 1953852058}
-  PriceStoneP: 1
-  PriceRockP: 2
-  PriceCoalP: 3
-  PriceCopperP: 4
-  PriceIronP: 5
-  PriceSilverP: 6
-  PriceGoldP: 7
-  PriceStoneM: 8
-  PriceRockM: 9
-  PriceCoalM: 10
-  PriceCopperM: 11
-  PriceIronM: 12
-  PriceSilverM: 13
-  PriceGoldM: 14
-  PricePlatinumM: 15
-  PriceIridiumM: 16
+  PriceStoneP: 99
+  PriceRockP: 99
+  PriceCoalP: 99
+  PriceCopperP: 99
+  PriceIronP: 99
+  PriceSilverP: 99
+  PriceGoldP: 99
+  PriceStoneM: 99
+  PriceRockM: 99
+  PriceCoalM: 99
+  PriceCopperM: 99
+  PriceIronM: 99
+  PriceSilverM: 99
+  PriceGoldM: 99
+  PricePlatinumM: 99
+  PriceIridiumM: 99
   PriceStonePText: {fileID: 5881783}
   PriceRockPText: {fileID: 2061785398}
   PriceCoalPText: {fileID: 1700978960}
   PriceCopperPText: {fileID: 64916968}
-  PriceIronPText: {fileID: 0}
+  PriceIronPText: {fileID: 700037982}
   PriceSilverPText: {fileID: 345649163}
   PriceGoldPText: {fileID: 1490839075}
   PriceStoneMText: {fileID: 1982315023}
@@ -6787,6 +6835,12 @@ MonoBehaviour:
   PriceGoldMText: {fileID: 1945296008}
   PricePlatinumMText: {fileID: 178748183}
   PriceIridiumMText: {fileID: 246162553}
+  StonePBuyButton: {fileID: 1915440592}
+  IronPBuyButton: {fileID: 325338003}
+  GoldPBuyButton: {fileID: 485335548}
+  IridiumPBuyButton: {fileID: 213140578}
+  MATKAPBuyButton: {fileID: 766164167}
+  playeractions: {fileID: 1367881001}
 --- !u!1 &1087090414
 GameObject:
   m_ObjectHideFlags: 0
@@ -7300,7 +7354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -288, y: -184}
+  m_AnchoredPosition: {x: -283, y: -184}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1169996334
@@ -7661,7 +7715,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: -183}
+  m_AnchoredPosition: {x: -197, y: -183}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266667393
@@ -8083,7 +8137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: -198}
+  m_AnchoredPosition: {x: -84, y: -198}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317057335
@@ -10110,7 +10164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -331, y: -183}
+  m_AnchoredPosition: {x: -326, y: -183}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1787674136
@@ -10285,7 +10339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31, y: -185}
+  m_AnchoredPosition: {x: -12, y: -185}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1822551629
@@ -10502,7 +10556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -175, y: -197}
+  m_AnchoredPosition: {x: -173, y: -197}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888327543
@@ -10815,11 +10869,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1915440593}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1085160461}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: StonePickaxeBuyButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1915440593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10967,7 +11033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -199}
+  m_AnchoredPosition: {x: 5, y: -199}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945296008

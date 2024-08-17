@@ -12,6 +12,17 @@ public class Inventory : MonoBehaviour
     public TextMeshProUGUI SmallStoneCountInvText,BigStoneCountInvText,CoalCountInvText,CopperCountInvText,IronCountInvText,SilverCountInvText,GoldCountInvText,PlatinumCountInvText,IridiumCountInvText;
     public int PriceStoneP,PriceRockP,PriceCoalP,PriceCopperP,PriceIronP,PriceSilverP,PriceGoldP,PriceStoneM,PriceRockM,PriceCoalM,PriceCopperM,PriceIronM,PriceSilverM,PriceGoldM,PricePlatinumM,PriceIridiumM;
     public TextMeshProUGUI PriceStonePText,PriceRockPText,PriceCoalPText,PriceCopperPText,PriceIronPText,PriceSilverPText,PriceGoldPText,PriceStoneMText,PriceRockMText,PriceCoalMText,PriceCopperMText,PriceIronMText,PriceSilverMText,PriceGoldMText,PricePlatinumMText,PriceIridiumMText;
+    public Button StonePBuyButton;
+    public Button IronPBuyButton;
+    public Button GoldPBuyButton;
+    public Button IridiumPBuyButton;
+    public Button MATKAPBuyButton;
+    private bool Stonebbutton_pressed = false;
+    private bool Ironbbutton_pressed = false;
+    private bool Goldbbutton_pressed = false;
+    private bool Iridiumbbutton_pressed = false;
+    private bool matkapbbutton_pressed = false;
+    public PlayerActions playeractions;
     public void Update(){
         SmallStoneCountInvText.text = SmallStoneCountInv.ToString();
         BigStoneCountInvText.text = BigStoneCountInv.ToString();
@@ -38,6 +49,41 @@ public class Inventory : MonoBehaviour
         PriceGoldMText.text = PriceGoldM.ToString();
         PricePlatinumMText.text = PricePlatinumM.ToString();
         PriceIridiumMText.text = PriceIridiumM.ToString();
+        if(SmallStoneCountInv >= PriceStoneP && Stonebbutton_pressed == false){
+            StonePBuyButton.interactable = true;
+        }
+        else{
+            StonePBuyButton.interactable = false;
+        }
+
+        if(BigStoneCountInv >= PriceRockP && CoalCountInv >= PriceCoalP && Ironbbutton_pressed == false){
+            IronPBuyButton.interactable = true;
+        }
+        else
+        {
+            IronPBuyButton.interactable = false;
+        }
+
+        if(CopperCountInv >= PriceCopperP && IronCountInv >= PriceIronP && Goldbbutton_pressed == false){
+            GoldPBuyButton.interactable = true;
+        }
+        else{
+            GoldPBuyButton.interactable = false;
+        }
+
+        if(SilverCountInv >= PriceSilverP && GoldCountInv >= PriceGoldP && Iridiumbbutton_pressed == false){
+            IridiumPBuyButton.interactable = true;
+        }
+        else{
+            IridiumPBuyButton.interactable = false;
+        }
+
+        if(SmallStoneCountInv >= PriceStoneM && BigStoneCountInv >= PriceRockM && CoalCountInv >= PriceCoalM && CopperCountInv >= PriceCopperM && IronCountInv >= PriceIronM && SilverCountInv >= PriceSilverM && GoldCountInv >= PriceGoldM && PlatinumCountInv >= PricePlatinumM && IridiumCountInv >= PriceIridiumM && matkapbbutton_pressed == false){
+            MATKAPBuyButton.interactable = true;
+        }
+        else{
+            MATKAPBuyButton.interactable = false;
+        }
     }
 
     public void AddOre(int OreIndex, int OreCount){
@@ -71,5 +117,41 @@ public class Inventory : MonoBehaviour
         if(OreIndex==9){
             UraniumCountInv = UraniumCountInv + OreCount;
         }
+    }
+    public void StonePickaxeBuyButton(){
+        playeractions.currentPickaxeIndex = 1;
+        SmallStoneCountInv = SmallStoneCountInv - PriceStoneP;
+        Stonebbutton_pressed = true;
+    }
+    public void IronPickaxeBuyButton(){
+        playeractions.currentPickaxeIndex = 2;
+        BigStoneCountInv = BigStoneCountInv - PriceRockP;
+        CoalCountInv = CoalCountInv - PriceCoalP;
+        Ironbbutton_pressed = true;
+    }
+    public void GoldPickaxeBuyButton(){
+        playeractions.currentPickaxeIndex = 3;
+        CopperCountInv = CopperCountInv - PriceCopperP;
+        IronCountInv = IronCountInv - PriceIronP;
+        Goldbbutton_pressed = true;
+    }
+    public void IridiumPickaxeBuyButton(){
+        playeractions.currentPickaxeIndex = 4;
+        SilverCountInv = SilverCountInv - PriceSilverP;
+        GoldCountInv = GoldCountInv - PriceGoldP;
+        Iridiumbbutton_pressed = true;
+    }
+    public void MatkapBuyButtonF(){
+        playeractions.currentPickaxeIndex = 5;
+        SmallStoneCountInv = SmallStoneCountInv - PriceStoneM;
+        BigStoneCountInv = BigStoneCountInv - PriceRockM;
+        CoalCountInv = CoalCountInv - PriceCoalM;
+        CopperCountInv = CopperCountInv - PriceCopperM;
+        IronCountInv = IronCountInv - PriceIronM;
+        SilverCountInv = SilverCountInv - PriceSilverM;
+        GoldCountInv = GoldCountInv - PriceGoldM;
+        PlatinumCountInv = PlatinumCountInv - PricePlatinumM;
+        IridiumCountInv = IridiumCountInv - PriceIridiumM;
+        matkapbbutton_pressed = true;
     }
 }
