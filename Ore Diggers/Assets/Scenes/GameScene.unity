@@ -6755,6 +6755,38 @@ MonoBehaviour:
   GoldCountInvText: {fileID: 1349242019}
   PlatinumCountInvText: {fileID: 343441438}
   IridiumCountInvText: {fileID: 1953852058}
+  PriceStoneP: 1
+  PriceRockP: 2
+  PriceCoalP: 3
+  PriceCopperP: 4
+  PriceIronP: 5
+  PriceSilverP: 6
+  PriceGoldP: 7
+  PriceStoneM: 8
+  PriceRockM: 9
+  PriceCoalM: 10
+  PriceCopperM: 11
+  PriceIronM: 12
+  PriceSilverM: 13
+  PriceGoldM: 14
+  PricePlatinumM: 15
+  PriceIridiumM: 16
+  PriceStonePText: {fileID: 5881783}
+  PriceRockPText: {fileID: 2061785398}
+  PriceCoalPText: {fileID: 1700978960}
+  PriceCopperPText: {fileID: 64916968}
+  PriceIronPText: {fileID: 0}
+  PriceSilverPText: {fileID: 345649163}
+  PriceGoldPText: {fileID: 1490839075}
+  PriceStoneMText: {fileID: 1982315023}
+  PriceRockMText: {fileID: 763656070}
+  PriceCoalMText: {fileID: 1888327543}
+  PriceCopperMText: {fileID: 184309148}
+  PriceIronMText: {fileID: 1317057335}
+  PriceSilverMText: {fileID: 554441165}
+  PriceGoldMText: {fileID: 1945296008}
+  PricePlatinumMText: {fileID: 178748183}
+  PriceIridiumMText: {fileID: 246162553}
 --- !u!1 &1087090414
 GameObject:
   m_ObjectHideFlags: 0
