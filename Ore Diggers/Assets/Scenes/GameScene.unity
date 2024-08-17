@@ -5997,7 +5997,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Iridium '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6445,8 +6445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.697876, y: 0}
+  m_SizeDelta: {x: 15.3562, y: 13.9602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943575391
 MonoBehaviour:
@@ -6784,9 +6784,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9285e2ff4e9194783d27140e1117af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SmallStoneCountInv: 110
-  BigStoneCountInv: 99
-  CoalCountInv: 99
+  SmallStoneCountInv: 0
+  BigStoneCountInv: 0
+  CoalCountInv: 0
   CopperCountInv: 0
   IronCountInv: 0
   SilverCountInv: 0
@@ -6803,22 +6803,22 @@ MonoBehaviour:
   GoldCountInvText: {fileID: 1349242019}
   PlatinumCountInvText: {fileID: 343441438}
   IridiumCountInvText: {fileID: 1953852058}
-  PriceStoneP: 99
-  PriceRockP: 99
-  PriceCoalP: 99
-  PriceCopperP: 99
-  PriceIronP: 99
-  PriceSilverP: 99
-  PriceGoldP: 99
-  PriceStoneM: 99
-  PriceRockM: 99
-  PriceCoalM: 99
-  PriceCopperM: 99
-  PriceIronM: 99
-  PriceSilverM: 99
-  PriceGoldM: 99
-  PricePlatinumM: 99
-  PriceIridiumM: 99
+  PriceStoneP: 1
+  PriceRockP: 1
+  PriceCoalP: 1
+  PriceCopperP: 1
+  PriceIronP: 1
+  PriceSilverP: 1
+  PriceGoldP: 1
+  PriceStoneM: 1
+  PriceRockM: 1
+  PriceCoalM: 1
+  PriceCopperM: 1
+  PriceIronM: 1
+  PriceSilverM: 1
+  PriceGoldM: 1
+  PricePlatinumM: 1
+  PriceIridiumM: 1
   PriceStonePText: {fileID: 5881783}
   PriceRockPText: {fileID: 2061785398}
   PriceCoalPText: {fileID: 1700978960}
@@ -8591,9 +8591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4748fff748356a04f9e30810aa2f81fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randomOreSpawn: {fileID: 1845771881}
   inventoryScripts: {fileID: 1085160461}
   gameManager: {fileID: 1085160459}
-  currentPickaxeIndex: 2
+  currentPickaxeIndex: 0
   currentDamage: 0
   handDamage: 1
   stonePickaxeDamage: 10
@@ -10420,17 +10421,17 @@ MonoBehaviour:
   iridiumOre: {fileID: 1060135432627092805, guid: ea362fb804817dd41ac84f2a3a4facc5, type: 3}
   uraniumOre: {fileID: 8651406649230804907, guid: f8a03ec84bafe4d4c9c819916b44a1f5, type: 3}
   ghostOre: {fileID: 6752571079623428232, guid: 0f06528d2ff606c40a4fbd7f9ff3310c, type: 3}
-  smallStoneOreCount: 50
-  bigStoneOreCount: 50
-  coalOreCount: 50
-  copperOreCount: 50
-  ironOreCount: 50
-  silverOreCount: 50
-  goldOreCount: 50
-  platinumOreCount: 50
-  iridiumOreCount: 50
-  uraniumOreCount: 5
-  mapSize: 50
+  smallStoneOreCount: 1
+  bigStoneOreCount: 1
+  coalOreCount: 1
+  copperOreCount: 1
+  ironOreCount: 1
+  silverOreCount: 1
+  goldOreCount: 1
+  platinumOreCount: 1
+  iridiumOreCount: 1
+  uraniumOreCount: 1
+  mapSize: 10
   spaceOresBetween: 3
 --- !u!4 &1845771882
 Transform:

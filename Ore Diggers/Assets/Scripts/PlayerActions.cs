@@ -9,9 +9,10 @@ using TMPro.EditorUtilities;
 
 public class PlayerActions : MonoBehaviour
 {
-
+    public RandomOreSpawn randomOreSpawn;
     public Inventory inventoryScripts;
     public GameManager gameManager;
+
     [Space]
     public int currentPickaxeIndex;
     [HideInInspector] public int currentDamage;
@@ -76,6 +77,7 @@ public class PlayerActions : MonoBehaviour
                                 TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
                                 notificationText.gameObject.transform.SetParent(notificationPanel.transform);
                                 notificationText.text = "+ " + oreScript.oreDropCount + " " + oreScript.oreName;
+                                randomOreSpawn.OneOreSpawn(oreScript.oreIndex);
                                 Destroy(hit.collider.gameObject);
                             }
                         }

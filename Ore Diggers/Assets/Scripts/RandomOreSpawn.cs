@@ -11,7 +11,8 @@ public class RandomOreSpawn : MonoBehaviour
 
     public int mapSize,spaceOresBetween;
     private int randomX, randomY,multipleX,multipleY;
-    private Vector2 randomCoord, ghostCoord;
+    private Vector2 randomCoord;
+
 
 
 
@@ -19,6 +20,21 @@ public class RandomOreSpawn : MonoBehaviour
     private void Start()
     {
         StartOreSpawn();
+    }
+
+    public void OneOreSpawn(int oreIndex)
+    {
+        multipleX = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+        multipleY = Random.Range(-mapSize / spaceOresBetween, mapSize / spaceOresBetween);
+        randomX = multipleX * spaceOresBetween;
+        randomY = multipleY * spaceOresBetween;
+        randomCoord = new Vector2(randomX, randomY);
+
+        GhostOreScript ghostOreObject = Instantiate(ghostOre, randomCoord, Quaternion.identity).GetComponent<GhostOreScript>();
+        ghostOreObject.mapsize = mapSize;
+        ghostOreObject.oreBetween = spaceOresBetween;
+        ghostOreObject.currentOreIndex = oreIndex;
+
     }
 
     public void StartOreSpawn()
