@@ -150,4 +150,4 @@ MonoBehaviour:
   oreIndex: 1
   oreDurability: 50
   oreRequiredPickaxeIndex: 1
-  oreDropCount: 5
+  oreDropCount: 3

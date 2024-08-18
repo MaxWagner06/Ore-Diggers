@@ -104,7 +104,7 @@ MonoBehaviour:
   oreIndex: 3
   oreDurability: 250
   oreRequiredPickaxeIndex: 2
-  oreDropCount: 5
+  oreDropCount: 2
 --- !u!61 &3479209539887656563
 BoxCollider2D:
   m_ObjectHideFlags: 0

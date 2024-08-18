@@ -102,9 +102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oreName: Gold
   oreIndex: 6
-  oreDurability: 2000
+  oreDurability: 900
   oreRequiredPickaxeIndex: 3
-  oreDropCount: 5
+  oreDropCount: 2
 --- !u!61 &3281302800567193426
 BoxCollider2D:
   m_ObjectHideFlags: 0

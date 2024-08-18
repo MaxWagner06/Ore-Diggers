@@ -84,7 +84,7 @@ public class PlayerActions : MonoBehaviour
                                 }
                                 else if(oreScript.oreIndex == 9)
                                 {
-                                    //THE FÝNAL
+                                    //THE Fï¿½NAL
                                     StartCoroutine(Final());
                                 }
                             }

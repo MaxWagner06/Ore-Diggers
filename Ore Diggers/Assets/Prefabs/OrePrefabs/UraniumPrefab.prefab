@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oreName: ???
   oreIndex: 9
-  oreDurability: 50000
+  oreDurability: 15000
   oreRequiredPickaxeIndex: 5
   oreDropCount: 777
 --- !u!61 &-714940096302201826

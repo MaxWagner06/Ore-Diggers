@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oreName: Platinum
   oreIndex: 7
-  oreDurability: 5000
+  oreDurability: 1200
   oreRequiredPickaxeIndex: 4
   oreDropCount: 1
 --- !u!61 &1249617633998728686

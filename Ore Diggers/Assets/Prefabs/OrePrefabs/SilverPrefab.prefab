@@ -102,9 +102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oreName: Silver
   oreIndex: 5
-  oreDurability: 1000
+  oreDurability: 600
   oreRequiredPickaxeIndex: 3
-  oreDropCount: 5
+  oreDropCount: 2
 --- !u!61 &7793435206932256217
 BoxCollider2D:
   m_ObjectHideFlags: 0
