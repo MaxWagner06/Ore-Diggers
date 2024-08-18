@@ -8632,7 +8632,7 @@ MonoBehaviour:
   randomOreSpawn: {fileID: 1845771881}
   inventoryScripts: {fileID: 1085160461}
   gameManager: {fileID: 1085160459}
-  TheFinal: {fileID: 0}
+  TheFinal: {fileID: 895004011}
   currentPickaxeIndex: 0
   currentDamage: 0
   handDamage: 1
