@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using TMPro;
 using UnityEngine.UI;
-using TMPro.EditorUtilities;
 
 public class PlayerActions : MonoBehaviour
 {
