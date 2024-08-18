@@ -8619,7 +8619,8 @@ GameObject:
   - component: {fileID: 1367880996}
   - component: {fileID: 1367880995}
   - component: {fileID: 1367881001}
-  m_Layer: 0
+  - component: {fileID: 1367881002}
+  m_Layer: 2
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8824,6 +8825,7 @@ MonoBehaviour:
   inventoryScripts: {fileID: 1085160461}
   gameManager: {fileID: 1085160459}
   TheFinal: {fileID: 895004011}
+  accessibleDistance: 4
   currentPickaxeIndex: 0
   currentDamage: 0
   handDamage: 1
@@ -8837,6 +8839,43 @@ MonoBehaviour:
   oreNameText: {fileID: 802475221}
   dontMineTextObject: {fileID: 6798303842891867222, guid: d38db2d670b51b146b2acc516767810f, type: 3}
   dontMinePanel: {fileID: 1812669891}
+  dontBreakTextObject: {fileID: 5623023772460245127, guid: 74a3d23e2e69d154ba81412b9500e058, type: 3}
+--- !u!58 &1367881002
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367880994}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 4
 --- !u!1 &1370632719
 GameObject:
   m_ObjectHideFlags: 0
@@ -10771,7 +10810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: -190.22534}
+  m_AnchoredPosition: {x: 294.9, y: -193.7}
   m_SizeDelta: {x: 200.4096, y: 53.994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812669893
@@ -10960,7 +10999,7 @@ MonoBehaviour:
   goldOreCount: 40
   platinumOreCount: 30
   iridiumOreCount: 30
-  uraniumOreCount: 5
+  uraniumOreCount: 3
   mapSize: 50
   spaceOresBetween: 3
 --- !u!4 &1845771882

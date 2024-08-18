@@ -9,4 +9,5 @@ public class OreScripts : MonoBehaviour
     public int oreDurability;
     public int oreRequiredPickaxeIndex;
     public int oreDropCount;
+    public bool canBreakable;
 }
