@@ -12,6 +12,7 @@ public class PlayerActions : MonoBehaviour
     public RandomOreSpawn randomOreSpawn;
     public Inventory inventoryScripts;
     public GameManager gameManager;
+    public GameObject TheFinal;
 
     [Space]
     public int currentPickaxeIndex;
@@ -55,12 +56,13 @@ public class PlayerActions : MonoBehaviour
             currentDamage = MATKAPDamage;
         }
         oreNameText.text = null;
-        if (!gameManager.PauseMenu_Open)
+
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.zero);
+        if (hit.collider)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector3.zero);
-            if (hit.collider)
+            if (hit.collider.gameObject.CompareTag("Ore"))
             {
-                if (hit.collider.gameObject.CompareTag("Ore"))
+                if (!gameManager.Inventory_Open && !gameManager.Trader_Open && !gameManager.PauseMenu_Open)
                 {
                     OreScripts oreScript = hit.collider.gameObject.GetComponent<OreScripts>();
                     oreNameText.text = oreScript.oreName;
@@ -72,22 +74,29 @@ public class PlayerActions : MonoBehaviour
 
                             if (oreScript.oreDurability <= 0)
                             {
-                                inventoryScripts.AddOre(oreScript.oreIndex, oreScript.oreDropCount);
-
-                                TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
-                                notificationText.gameObject.transform.SetParent(notificationPanel.transform);
-                                notificationText.text = "+ " + oreScript.oreDropCount + " " + oreScript.oreName;
-                                randomOreSpawn.OneOreSpawn(oreScript.oreIndex);
-                                Destroy(hit.collider.gameObject);
+                                if(oreScript.oreIndex != 9)
+                                {
+                                    inventoryScripts.AddOre(oreScript.oreIndex, oreScript.oreDropCount);
+                                    TextMeshProUGUI notificationText = Instantiate(notificationTextObject, notificationPanel.transform.position, Quaternion.identity).GetComponent<TextMeshProUGUI>();
+                                    notificationText.gameObject.transform.SetParent(notificationPanel.transform);
+                                    notificationText.text = "+ " + oreScript.oreDropCount + " " + oreScript.oreName;
+                                    randomOreSpawn.OneOreSpawn(oreScript.oreIndex);
+                                    Destroy(hit.collider.gameObject);
+                                }
+                                else if(oreScript.oreIndex == 9)
+                                {
+                                    //THE FÝNAL
+                                    StartCoroutine(Final());
+                                }
                             }
                         }
                         else
                         {
-                            if(oreScript.oreRequiredPickaxeIndex == 0)
+                            if (oreScript.oreRequiredPickaxeIndex == 0)
                             {
                                 currentPickaxeName = "Hand";
                             }
-                            else if(oreScript.oreRequiredPickaxeIndex == 1)
+                            else if (oreScript.oreRequiredPickaxeIndex == 1)
                             {
                                 currentPickaxeName = "Stone Pickaxe";
                             }
@@ -111,10 +120,16 @@ public class PlayerActions : MonoBehaviour
                             dontMineText.gameObject.transform.SetParent(dontMinePanel.transform);
                             dontMineText.text = currentPickaxeName + " Required!";
                         }
-
                     }
                 }
             }
         }
+    }
+
+    IEnumerator Final()
+    {
+        TheFinal.SetActive(true);
+        yield return new WaitForSeconds(22f);
+        Application.Quit();
     }
 }

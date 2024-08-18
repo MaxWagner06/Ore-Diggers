@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject TraderPanel;
     public bool Inventory_Open = false;
     public bool PauseMenu_Open = false;
+    public bool Trader_Open = false;
 
     public void Update()
     {
@@ -61,10 +62,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
-    public void TraderOpenButton(){
+    public void TraderOpenButton()
+    {
         TraderPanel.SetActive(true);
+        Trader_Open = true;
     }
-    public void TraderCloseButton(){
+    public void TraderCloseButton()
+    {
         TraderPanel.SetActive(false);
+        Trader_Open = false;
     }
 }
